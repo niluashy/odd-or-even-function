@@ -8,10 +8,10 @@ node {
     }
 
     stage('Publish') {
-        azureFunctionAppPublish appName: env.FUNCTION_NAME, 
-                                azureCredentialsId: env.AZURE_CRED_ID, 
+        azureFunctionAppPublish appName: env.myapppravin, 
+                                azureCredentialsId: env.096e3a85-6da0-491d-bfa7-f3afe0cb91b5
                                 filePath: '**/*.json,**/*.jar,bin/*,HttpTrigger-Java/*', 
-                                resourceGroup: env.RES_GROUP, 
+                                resourceGroup: env.TCSEZCloud, 
                                 sourceDirectory: 'target/azure-functions/odd-or-even-function-sample'
     }
 }
